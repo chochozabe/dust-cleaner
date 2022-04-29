@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import CardList from "./CardList";
 import Header from "./Header";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header month={curentMonth} />
+      <CardList />
     </div>
   );
 }

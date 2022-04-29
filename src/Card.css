@@ -1,0 +1,5 @@
+.cardContent {
+  border: "1px solid black";
+  border-radius: "15px";
+  width: fit-content;
+}
