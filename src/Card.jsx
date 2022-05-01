@@ -3,7 +3,7 @@ import ReactCardFlip from "react-card-flip";
 import "./Card.css";
 
 const Card = (props) => {
-  const { isFlipped, name } = props;
+  const { isFlipped, name, week } = props;
 
   const styles = {
     cardWrap: {
@@ -25,9 +25,9 @@ const Card = (props) => {
       flipDirection="vertical"
       containerStyle={styles.cardWrap}
     >
-      <div style={styles.cardText}>❓</div>
-
       <div style={styles.cardText}>{name}</div>
+
+      <div style={styles.cardText}>{week}</div>
     </ReactCardFlip>
   );
 };

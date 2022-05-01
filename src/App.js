@@ -5,12 +5,11 @@ import Header from "./Header";
 
 function App() {
   const currentDate = new Date();
-  const curentMonth = currentDate.getMonth() + 1;
 
   return (
     <div className="App">
-      <Header month={curentMonth} />
-      <CardList />
+      <Header month={currentDate.getMonth() + 1} />
+      <CardList currentDate={currentDate} />
     </div>
   );
 }
